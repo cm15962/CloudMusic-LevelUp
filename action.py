@@ -172,7 +172,7 @@ class CloudMusic:
             ret = json.loads(res.text)
             for i in ret["playlist"]["trackIds"]:
                 music_id.append(i["id"])
-        # print("歌单大小：{musicCount}首\n".format(musicCount=len(music_id)))
+        print("歌单大小：{musicCount}首\n".format(musicCount=len(music_id)))
         post_data = json.dumps(
             {
                 "logs": json.dumps(
